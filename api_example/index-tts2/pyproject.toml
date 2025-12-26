@@ -1,0 +1,11 @@
+[project]
+name = "remotetts"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "gradio-client>=1.13.3",
+    "openai>=2.1.0",
+    "socksio>=1.0.0",
+]
