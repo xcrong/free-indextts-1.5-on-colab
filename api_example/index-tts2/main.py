@@ -1,3 +1,4 @@
+from pathlib import Path
 from gradio_client import Client, handle_file
 from enum import StrEnum
 
@@ -24,7 +25,7 @@ client = Client("https://c82c4a170304865bd2.gradio.live")
 result = client.predict(
     emo_control_method=EmoControl.EmoVector,
     # 注意替换为自己的 参考音频
-    prompt=handle_file("audio_sample/man.mp3"),
+    prompt=handle_file(Path(__file__).parent.parent / "samples" / "man.mp3"),
     text=text,
     emo_ref_path=None,
     emo_weight=0.65,
