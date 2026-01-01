@@ -1,7 +1,7 @@
 [project]
 name = "remotetts"
 version = "0.1.0"
-description = "Add your description here"
+description = "远程调用 TTS 的示例"
 readme = "README.md"
 requires-python = ">=3.13"
 dependencies = [
